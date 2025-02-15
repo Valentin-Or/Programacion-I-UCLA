@@ -1,12 +1,12 @@
 export default class Cl_Estudiante {
-    constructor(nombre, cedula, sexo, nota) {
-        this.nombre = nombre;
+    constructor(n, cedula, sexo, nota) {
+        this.nombre = n;
         this.cedula = cedula;
         this.sexo = sexo;
         this.nota = nota;
     }
-    set nombre(nombre) {
-        this.nombre = nombre;
+    set nombre(n) {
+        this.nombre = n;
     }
     set cedula(cedula) {
         this.cedula = cedula;
