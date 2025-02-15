@@ -20,18 +20,22 @@ Datos de inicialización para Cl_examen
   nombre: Mery'  cedula: 3333  sexo: 'F'  nota: 8
 */
 
-import Cl_Estudiante from "./Cl_Estudiante.js";
-import Cl_Examen from "./Cl_Examen.js";
+import Cl_Estudiante from "./Cl_Estudiante.js"
+import Cl_Examen from "./Cl_Examen.js"
 
-let examen = new Cl_Examen();
-let est1 = new Cl_Estudiante('Luis', 1111, 'M', 12);
-let est2 = new Cl_Estudiante('Carla', 2222, 'F', 16.5);
-let est3 = new Cl_Estudiante('Mery', 3333, 'F', 8);
+let examen = new Cl_Examen()
+let est1 = new Cl_Estudiante("Luis", 1111, "M", 12)
+let est2 = new Cl_Estudiante("Carla", 2222, "F", 16.5)
+let est3 = new Cl_Estudiante("Mery", 3333, "F", 8)
 
-examen.procesarEstudiante(est1);
-examen.procesarEstudiante(est2);
-examen.procesarEstudiante(est3);
+examen.procesarEstudiante(est1)
+examen.procesarEstudiante(est2)
+examen.procesarEstudiante(est3)
 
-alert(`Porcentaje de aprobados: ${examen.porcentajeAprobados().toFixed(2)}%`);
-alert(`Estudiante con la mejor nota: ${examen.auxNombreMayorNota}`); 
-alert(`Porcentaje de chicas aprobadas: ${examen.porcentajeMujeresAprobadas().toFixed(2)}%`);
+alert(`Porcentaje de aprobados: ${examen.porcentajeAprobados().toFixed(2)}%`)
+alert(`Estudiante con la mejor nota: ${examen.auxNombreMayorNota}`)
+alert(
+  `Porcentaje de chicas aprobadas: ${examen
+    .porcentajeMujeresAprobadas()
+    .toFixed(2)}%`
+)
