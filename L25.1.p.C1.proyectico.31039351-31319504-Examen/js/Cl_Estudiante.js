@@ -6,10 +6,10 @@ export default class Cl_Estudiante {
         this.nota = nota;
     }
     set nombre(n) {
-        this.nombre = n;
+        this.nombre =n;
     }
     set cedula(cedula) {
-        this.cedula = cedula;
+        this.cedula =+ cedula;
     }
     set sexo(sexo) {
         this.sexo = sexo;
