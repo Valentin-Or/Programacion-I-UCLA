@@ -32,6 +32,6 @@ examen.procesarEstudiante(est1);
 examen.procesarEstudiante(est2);
 examen.procesarEstudiante(est3);
 
-alert('Porcentaje de aprobados: ${examen.porcentajeAprobados()}');
-alert('Estudiante con la mejor nota: ${examen.estudianteMejorNota()}'); 
-alert('Porcentaje de chicas aprobadas: ${examen.porcentajeChicasAprobadas()}');
+alert(`Porcentaje de aprobados: ${examen.porcentajeAprobados().toFixed(2)}%`);
+alert(`Estudiante con la mejor nota: ${examen.auxNombreMayorNota}`); 
+alert(`Porcentaje de chicas aprobadas: ${examen.porcentajeMujeresAprobadas().toFixed(2)}%`);
